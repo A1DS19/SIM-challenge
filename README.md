@@ -9,12 +9,12 @@ To run the Advent of Code solutions, follow these steps:
 
    - To run the Day 1 solution:
      ```bash
-     cd advent_of_code/day_1
+     cd advent-of-code/day_1
      cargo run
      ```
 
    - To run the Day 2 solution:
      ```bash
-     cd advent_of_code/day_2
+     cd advent-of-code/day_1
      cargo run
      ```
