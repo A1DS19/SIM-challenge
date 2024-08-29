@@ -1,15 +1,15 @@
-import { MetaFunction } from "@remix-run/node";
-import { Link } from "@remix-run/react";
-import { parallaxChallengeData } from "~/data";
+import { MetaFunction } from '@remix-run/node';
+import { Link } from '@remix-run/react';
+import { parallaxChallengeData } from '~/data';
 export const meta: MetaFunction = () => {
   return [
     { title: `${parallaxChallengeData.title} | Star Wars Challenge` },
     {
-      property: "og:title",
+      property: 'og:title',
       content: `${parallaxChallengeData.title} | Star Wars Challenge`,
     },
     {
-      name: "description",
+      name: 'description',
       content: parallaxChallengeData.description,
     },
   ];
@@ -17,7 +17,9 @@ export const meta: MetaFunction = () => {
 const parallax = () => {
   return (
     <div>
-      <h1 className="mb-5 text-2xl font-bold">{parallaxChallengeData.title}</h1>
+      <h1 className="mb-5 text-center text-2xl font-bold lg:text-start">
+        {parallaxChallengeData.title}
+      </h1>
       <hr className="mb-10" />
       <span className="font-light text-gray-700">
         {parallaxChallengeData.description}
@@ -41,7 +43,7 @@ const parallax = () => {
         </ul>
       </div>
     </div>
- )
-}
+  );
+};
 
-export default parallax
+export default parallax;

@@ -17,7 +17,7 @@ export const meta: MetaFunction = () => {
 export default function responsive() {
   return (
     <div>
-      <h1 className="mb-5 text-2xl font-bold">
+      <h1 className="mb-5 text-center text-2xl font-bold lg:text-start">
         {responsiveChallengeData.title}
       </h1>
       <hr className="mb-10" />

@@ -27,7 +27,9 @@ export default function People() {
 
   return (
     <div>
-      <h1 className="mb-5 text-2xl font-bold">{PeopleChallengeData.title}</h1>
+      <h1 className="mb-5 text-center text-2xl font-bold lg:text-start">
+        {PeopleChallengeData.title}
+      </h1>
       <hr className="mb-10" />
       <span className="font-light text-gray-700">
         {PeopleChallengeData.description}

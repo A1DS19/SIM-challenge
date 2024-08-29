@@ -8,6 +8,8 @@ export const starWarsMenuData: MenuItem[] = [
   { url: '/species', title: 'Species', isActive: false },
   { url: '/vehicles', title: 'Vehicles', isActive: false },
   { url: '/starships', title: 'Starships', isActive: false },
+  { url: '/responsive', title: 'Responsive', isActive: false },
+  { url: '/parallax', title: 'Parallax', isActive: false },
 ];
 
 export const StarWarsSidebarMenu: MenuGroup = {

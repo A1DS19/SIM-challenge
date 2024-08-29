@@ -41,7 +41,9 @@ export default function Films() {
   return (
     <div>
       <div>
-        <h1 className="mb-5 text-2xl font-bold">{filmsData.title}</h1>
+        <h1 className="filmsData mb-5 text-center text-2xl font-bold lg:text-start">
+          {filmsData.title}
+        </h1>
         <hr className="mb-10" />
         <span className="font-light text-gray-700">
           {filmsData.description}
@@ -67,7 +69,9 @@ export default function Films() {
       </div>
 
       <div className="container mx-auto p-6">
-        <h1 className="mb-6 text-3xl font-bold">Star Wars Movies</h1>
+        <h1 className="mb-6 text-center text-3xl font-bold">
+          Star Wars Movies
+        </h1>
 
         <div className="mb-6 max-w-[50%]">
           <input

@@ -17,7 +17,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div>
-      <h1 className="mb-5 text-2xl font-bold">{HomeData.title}</h1>
+      <h1 className="mb-5 mt-5 text-2xl font-bold lg:mt-0">{HomeData.title}</h1>
       <hr className="mb-10" />
       <p className="mb-10 font-light text-gray-700">{HomeData.description}</p>
       <hr className="mb-10" />

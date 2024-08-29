@@ -1,15 +1,15 @@
-import { MetaFunction } from "@remix-run/node";
-import { Link } from "@remix-run/react";
-import { starshipsChallengeData } from "~/data";
+import { MetaFunction } from '@remix-run/node';
+import { Link } from '@remix-run/react';
+import { starshipsChallengeData } from '~/data';
 export const meta: MetaFunction = () => {
   return [
     { title: `${starshipsChallengeData.title} | Star Wars Challenge` },
     {
-      property: "og:title",
+      property: 'og:title',
       content: `${starshipsChallengeData.title} | Star Wars Challenge`,
     },
     {
-      name: "description",
+      name: 'description',
       content: starshipsChallengeData.description,
     },
   ];
@@ -17,7 +17,7 @@ export const meta: MetaFunction = () => {
 export default function Starships() {
   return (
     <div>
-      <h1 className="mb-5 text-2xl font-bold">
+      <h1 className="mb-5 text-center text-2xl font-bold lg:text-start">
         {starshipsChallengeData.title}
       </h1>
       <hr className="mb-10" />
@@ -29,7 +29,7 @@ export default function Starships() {
         <ul className="list-disc">
           {starshipsChallengeData.items.map((item, index) => (
             <li key={index}>
-              {item.description}{" "}
+              {item.description}{' '}
               {item.documentationUrl && (
                 <Link
                   to={item.documentationUrl}
