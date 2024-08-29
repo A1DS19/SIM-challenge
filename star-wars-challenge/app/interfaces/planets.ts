@@ -8,8 +8,8 @@ export type Planet = {
   terrain: string;
   surface_water: string;
   population: string;
-  residents: string[];
-  films: string[];
+  residents: string[]; // Array of URLs to people
+  films: string[]; // Array of URLs to films
   created: string;
   edited: string;
   url: string;
