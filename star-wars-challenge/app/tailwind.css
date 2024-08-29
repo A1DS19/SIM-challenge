@@ -81,3 +81,32 @@
   flex-direction: column;
   left: 300px;
 }
+
+@keyframes starScroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+@keyframes land {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
+
+.parallax-stars {
+  background-image: url('/public/stars.jpg');
+  background-size: cover;
+  background-repeat: repeat-y;
+  animation: starScroll 20s linear infinite;
+}
+
+.starships img {
+  animation: land 2s ease-out forwards;
+}

@@ -27,4 +27,4 @@ To run the Advent of Code solutions, follow these steps:
      npm install
      npm run dev
      ```
-   - Check the Planets and Films sections.
+   - Check the Planets, Films, Responsive and Parallax sections.
